@@ -1,0 +1,22 @@
+/* Ajustes pequenos que o Bootstrap não cobre */
+
+/* Limita a largura do texto de apresentação para facilitar a leitura */
+.texto-intro {
+  max-width: 40rem;
+}
+
+/* Botões com área de toque mínima de 44px (recomendação de acessibilidade) */
+.card .btn {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contorno de foco bem visível para quem navega pelo teclado */
+a:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid #212529;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px #fff;
+}
